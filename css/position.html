@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: 20px;
+            background-color: rgb(124, 99, 168);
+            height: 700px;
+            width: 1000px;
+        }
+        .image1{
+            margin: 10px;
+            padding: 10px;
+            position: relative;
+            top: 50px;
+            /* it will shift 100px down from top And gap maintain */
+
+        }
+        .image2{
+            margin: 10px;
+            padding: 10px;
+            /* position: absolute; */
+            top: 100px;
+            /* gap will not maintai due to absolute property */
+
+        }
+        .image3{
+            margin: 10px;
+            padding: 10px;
+            position: fixed;
+            /* it will not move  */
+
+        }
+        .image4{
+            margin: 10px;
+            padding: 10px;
+            position: sticky;
+            top: 300px;
+            /* it will static in this div */
+
+        }
+        .container2{
+            width: 1000px;
+            height: 700px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="img1.jpg"
+        width="200px"
+        height="200px"
+        class="image1"
+         alt="img1">
+         <img src="img2.jpg"
+        width="200px"
+        height="200px"
+        class="image2"
+         alt="img2">
+         <img src="img3.jpg"
+         width="200px"
+         height="200px"
+         class="image3"
+          alt="img3">
+          <img src="img4.jpg"
+          width="200px"
+          height="200px"
+          class="image4"
+           alt="img4">
+    </div>
+    <div class="container2">
+
+    </div>
+</body>
+</html>
